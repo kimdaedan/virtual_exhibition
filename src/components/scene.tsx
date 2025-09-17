@@ -104,7 +104,7 @@ export default function Scene() {
 
       <Image
         alt="Lukisan di dinding"
-        url="/art.jpg"
+        url="/foto.png"
         scale={[3, 3, 3]}
         position={[0, 2.5, -9.5]}
       />

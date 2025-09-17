@@ -35,7 +35,7 @@ export default function GalleryPage() {
           </div>
         </div>
         <div className="gallery-title">
-          <h1>LES BOUQUETS DE BERNARD BUFFET</h1>
+          <h1>Booth Stand Politeknik Negeri Batam</h1>
         </div>
       </main>
     </div>

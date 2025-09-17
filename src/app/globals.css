@@ -12,13 +12,13 @@
 }
 
 body {
-  background-image: url('/background.jpg');
+  background-image: url('/futuristik.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: var(--font-poppins), sans-serif;
   color: var(--text-dark);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -196,4 +196,194 @@ main {
   font-weight: 500;
   color: var(--text-dark);
   letter-spacing: 2px;
+}
+
+/* STYLING UNTUK FOOTER SIMPLE */
+.site-footer-simple {
+  background-color: #222222;
+  color: #a0a0a0;
+  padding: 15px 4%;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-logo-simple {
+  display: flex;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+}
+
+/* STYLING UNTUK HALAMAN EXHIBITION (VERSI FINAL) */
+.exhibition-page main {
+  padding: 40px 0;
+  background-color: #f4f5f7; /* Warna latar yang lebih lembut */
+  width: 100%;
+  flex-grow: 1;
+}
+
+.exhibition-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff; /* Kontainer putih di tengah */
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.05);
+}
+
+.sub-nav {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.filter-tags {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #f4f5f7;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.2s ease-in-out;
+}
+
+.tag:hover {
+  background-color: #e8e8e8;
+  color: #000;
+}
+
+.tag.active {
+  background-color: #2d2d2d;
+  color: #fff;
+  border-color: #2d2d2d;
+}
+
+/* CAROUSEL STYLING */
+.exhibition-carousel {
+  width: 100%;
+  position: relative;
+}
+
+.exhibition-card {
+  display: block;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.exhibition-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  border-color: #ccc;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  position: relative; /* Dibutuhkan untuk Image Next.js */
+}
+
+.card-image img {
+  object-fit: cover; /* Membuat gambar mengisi area tanpa distorsi */
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #6b6b6b;
+  font-weight: 500;
+}
+
+/* Custom Swiper Styles */
+.swiper-pagination {
+  bottom: -10px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #2d2d2d !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #000 !important;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 44px !important;
+  height: 44px !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  border: 1px solid #eee;
+  transition: transform 0.2s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    transform: scale(1.1);
+}
+
+.swiper-button-prev { left: -22px !important; }
+.swiper-button-next { right: -22px !important; }
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 1.1rem !important;
+  font-weight: 700;
+}
+
+.view-all-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.view-all-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 }

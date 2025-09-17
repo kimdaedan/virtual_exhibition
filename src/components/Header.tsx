@@ -10,7 +10,7 @@ export default function Header() {
       </Link>
       <nav className="main-nav">
         <div className="nav-item">
-          <a href="#">EXHIBITION</a>
+          <Link href="/exhibition">EXHIBITION</Link>
           <div className="nav-subheading">3D BOOTH PRODI</div>
         </div>
         <div className="nav-item">

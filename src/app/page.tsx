@@ -9,10 +9,10 @@ export default function HomePage() {
   <Image src="/logo.png" alt="Logo Perusahaan Anda" width={80} height={80} />
 </a>
         <nav className="main-nav">
-          <div className="nav-item">
-            <a href="#">EXHIBITION</a>
-            <div className="nav-subheading">3D BOOTH PRODI</div>
-          </div>
+        <div className="nav-item">
+          <Link href="/exhibition">EXHIBITION</Link>
+          <div className="nav-subheading">3D BOOTH PRODI</div>
+        </div>
           <div className="nav-item">
             <a href="#">ART.SPACES</a>
             <div className="nav-subheading">3D Exhibitions</div>
