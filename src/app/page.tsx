@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Header from "@/components/Header";
+import Link from "next/link";
 export default function HomePage() {
   return (
     <>
@@ -8,8 +10,8 @@ export default function HomePage() {
 </a>
         <nav className="main-nav">
           <div className="nav-item">
-            <a href="#">ART.DEPOT</a>
-            <div className="nav-subheading">Inventory Management</div>
+            <a href="#">EXHIBITION</a>
+            <div className="nav-subheading">3D BOOTH PRODI</div>
           </div>
           <div className="nav-item">
             <a href="#">ART.SPACES</a>
@@ -25,25 +27,26 @@ export default function HomePage() {
           </div>
         </nav>
         <div className="header-actions">
-          <a href="#" className="upgrade-btn">UPGRADE</a>
+          <a href="#" className="upgrade-btn">LOGIN</a>
           <span>🔍</span> {/* Placeholder for Search Icon */}
           <span>❔</span> {/* Placeholder for Help Icon */}
-          <span>👤 Dansleif0</span> {/* Placeholder for User Profile */}
+          <span>👤 GUEST</span> {/* Placeholder for User Profile */}
           <span>☰</span> {/* Placeholder for Menu Icon */}
         </div>
       </header>
 
       <main>
         <div className="hero-card">
-          <h1>Present, manage and <strong>promote your art</strong></h1>
+          <h1>Present, manage and <strong>Pamerkan Karya Kalian</strong></h1>
           <p>
-            KUNSTMATRIX enables you to create beautiful 3D showcases of
+             KUNSTMATRIX enables you to create beautiful 3D showcases of
             your art to impress art lovers and collectors.
           </p>
-          <a href="#" className="cta-button">
-            <span>📋</span> {/* Placeholder for View Icon */}
+          {/* 4. Bungkus tombol dengan Link */}
+          <Link href="/gallery" className="cta-button">
+            <span>📋</span>
             VIEW EXAMPLES
-          </a>
+          </Link>
         </div>
       </main>
     </>

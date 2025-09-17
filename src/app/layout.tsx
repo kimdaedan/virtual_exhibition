@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "ArtMatrix Showcase",
+  title: "Kim Daedan",
   description: "Present, manage and promote your art",
 };
 
