@@ -1,6 +1,8 @@
 import Image from 'next/image';
-import Header from "@/components/Header";
 import Link from "next/link";
+import Header from "@/components/Header";
+import { FiSearch, FiHelpCircle, FiUser, FiMenu } from 'react-icons/fi';
+
 export default function HomePage() {
   return (
     <>
@@ -26,13 +28,13 @@ export default function HomePage() {
             <div className="nav-subheading">3D Art App</div>
           </div>
         </nav>
-        <div className="header-actions">
-          <a href="#" className="upgrade-btn">LOGIN</a>
-          <span>🔍</span> {/* Placeholder for Search Icon */}
-          <span>❔</span> {/* Placeholder for Help Icon */}
-          <span>👤 GUEST</span> {/* Placeholder for User Profile */}
-          <span>☰</span> {/* Placeholder for Menu Icon */}
-        </div>
+         <div className="header-actions">
+                <a href="#" className="upgrade-btn">LOGIN</a>
+                <a href="#"><FiSearch /></a>
+                <a href="#"><FiHelpCircle /></a>
+                <a href="#">GUEST <FiUser /></a>
+                <button className="menu-btn"><FiMenu /></button>
+              </div>
       </header>
 
       <main>

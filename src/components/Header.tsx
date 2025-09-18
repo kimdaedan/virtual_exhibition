@@ -1,6 +1,7 @@
 // src/components/Header.tsx
 import Image from 'next/image';
 import Link from 'next/link';
+import { FiSearch, FiHelpCircle, FiUser, FiMenu } from 'react-icons/fi';
 
 export default function Header() {
   return (
@@ -28,10 +29,10 @@ export default function Header() {
       </nav>
       <div className="header-actions">
         <a href="#" className="upgrade-btn">LOGIN</a>
-        <span>🔍</span>
-        <span>❔</span>
-        <span>👤 GUEST</span>
-        <span>☰</span>
+        <a href="#"><FiSearch /></a>
+        <a href="#"><FiHelpCircle /></a>
+        <a href="#">GUEST <FiUser /></a>
+        <button className="menu-btn"><FiMenu /></button>
       </div>
     </header>
   );

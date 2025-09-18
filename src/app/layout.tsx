@@ -10,8 +10,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Kim Daedan",
-  description: "Present, manage and promote your art",
+  title: "Virtual Exhibition",
+  description: "Pamerkan Karya Kalian",
 };
 
 export default function RootLayout({

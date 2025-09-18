@@ -21,7 +21,7 @@ const exhibitions = [
   { id: 2, image: '/exhibitions/multimedia.jpg', title: 'Prodi D4 Teknologi Rekayasa Multimedia', organizer: 'MM' },
   { id: 3, image: '/exhibitions/geomatika.jpg', title: 'Prodi D3 Teknologi Geomatika', organizer: 'GI' },
   { id: 4, image: '/exhibitions/animasi.jpg', title: 'Prodi D4 Animasi', organizer: 'AN' },
-  { id: 5, image: '/exhibitions/siber.jpg', title: 'Prodi D4 Rekayasa Keamanan Siber', organizer: 'RKS' },
+  { id: 5, image: '/exhibitions/siber.png', title: 'Prodi D4 Rekayasa Keamanan Siber', organizer: 'RKS' },
   { id: 6, image: '/exhibitions/rpl.jpg', title: 'Prodi D4 Teknologi Rekayasa Perangkat Lunak', organizer: 'TRPL' },
   { id: 7, image: '/exhibitions/game.jpg', title: 'Prodi D4 Teknik Permainan', organizer: 'GAME' },
   { id: 8, image: '/exhibitions/robotika.jpg', title: 'Prodi D4 Teknologi Rekayasa Mekatronika', organizer: 'MEKA' },
