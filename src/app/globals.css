@@ -5,6 +5,29 @@
   --border-light: #e0e0e0;
 }
 
+/* ===== STYLING GLOBAL UNTUK STICKY FOOTER ===== */
+html, body {
+  height: 100%; /* HTML dan Body harus mengisi seluruh tinggi viewport */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hindari scroll horizontal yang tidak diinginkan */
+}
+
+#root-container {
+  display: flex;
+  flex-direction: column; /* Susun Header, Main, Footer secara vertikal */
+  min-height: 100vh; /* Pastikan kontainer ini minimal setinggi viewport */
+  width: 100%;
+}
+
+/* Konten utama (hasil dari {children}) */
+#main-content {
+  flex-grow: 1; /* Ini adalah "pendorong" footer. Akan mengisi semua ruang kosong */
+  display: flex; /* Jadikan main juga flex untuk mengelola children-nya */
+  flex-direction: column;
+  width: 100%; /* Pastikan main mengisi lebar penuh */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -140,19 +163,25 @@ main {
   flex-direction: column;
   height: 100vh;
   width: 100%;
+  flex-grow: 1;
 }
 
 .gallery-main {
   display: flex;
   flex-direction: column;
   background-color: #f4f4f4;
+  padding: 40px 4%;
+  flex-grow: 1;
 }
 
 .gallery-container {
-  flex-grow: 1;
+ height: 65vh; /* Dari sebelumnya 60vh */
   position: relative;
   background-color: #e0e0e0;
   width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
 }
 
 .gallery-title p {

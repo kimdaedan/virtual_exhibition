@@ -1,7 +1,7 @@
 // src/app/gallery/page.tsx
 'use client';
 
-import Header from "@/components/Header";
+
 import Scene from "@/components/scene";
 import { FiArrowUp, FiArrowLeft, FiArrowDown, FiArrowRight } from 'react-icons/fi';
 import StarRating from "@/components/StarRating";
@@ -19,7 +19,6 @@ export default function GalleryPage() {
 
   return (
     <div className="gallery-page">
-      <Header />
       <main className="gallery-main">
         <div className="gallery-container">
           <Scene />

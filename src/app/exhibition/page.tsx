@@ -2,7 +2,6 @@
 'use client';
 
 import { useState } from 'react'; // 1. Impor useState
-import Header from "@/components/Header";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -35,7 +34,6 @@ export default function ExhibitionPage() {
 
   return (
     <div className="exhibition-page">
-      <Header />
       <main>
         <div className="exhibition-container">
           <nav className="sub-nav">
